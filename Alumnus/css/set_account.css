@@ -1,0 +1,278 @@
+/*  General CSS*/
+
+.wrapper{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/*  header  */
+header{
+    width: 100%;
+    height: 80px;
+    background: #353434;
+    position: relative;
+}
+
+header .logo{
+    float: left;
+    margin-top: 21px;
+}
+
+header nav{
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 0 0 40px;
+    padding: 13px 40px;
+    border-left: 1px #404040 solid;
+    z-index: 9999;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: FangSong;
+    letter-spacing: 1px;
+}
+
+header nav ul li:first-child{
+    margin-left: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #65bf95;
+}
+
+header .icon {
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: 14px;
+    right: 40px;
+}
+
+header .group {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background: #D4B67B;
+    z-index: 1;
+}
+
+.action li{
+    width: 140px;
+    height: 40px;
+}
+
+.action li a{
+    font-family: FangSong;
+    color: #2c2c2c;
+}
+
+.action li a:hover{
+    color: #56b086;
+}
+.action i{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px;
+}
+
+
+/* Billboard */
+
+.billboard{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.billboard .wrapper{
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    background: #ffd475;
+}
+
+.billboard .caption p{
+    display: inline-block;
+    color: #000;
+    font-family: FangSong;
+    font-weight: lighter;
+    font-size: 30px;
+    padding: 20px;
+    background: rgba(0, 255, 60, 0.6);
+    margin-bottom: 0px;
+}
+
+.billboard #person_data,#set_email,#set_icon,#set_phone,#set_pwd{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.billboard #person_data td,#set_email td,#set_icon td,#set_phone td,#set_pwd td{
+    height:40px;
+    font-family: FangSong;
+    font-size:20px;
+    margin: 36px;
+    border: #D4B67B solid 2px;
+}
+
+.billboard .special{
+    width: 480px;
+}
+
+.billboard  a{
+    font-size: 18px;
+}
+
+.billboard  a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+#person_form{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: none;
+}
+
+#person_form td{
+    width: 300px;
+    height: 50px;
+    font-family: FangSong;
+    font-size:20px;
+}
+
+#person_form input{
+    width: 336px;
+    height: 30px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+
+#person_form .save{
+    background: #2ae789;
+}
+
+#icon_form{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: none;
+}
+
+#icon_form td{
+    width: 300px;
+    height: 50px;
+    font-family: FangSong;
+    font-size:20px;
+}
+
+#email_form{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: none;
+}
+
+#email_form td{
+    width: 300px;
+    height: 50px;
+    font-family: FangSong;
+    font-size:20px;
+}
+
+#email_form input{
+    width: 336px;
+    height: 30px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+
+#email_form .save{
+    background: #2ae789;
+}
+
+#phone_form{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: none;
+}
+
+#phone_form td{
+    width: 300px;
+    height: 50px;
+    font-family: FangSong;
+    font-size:20px;
+}
+
+#phone_form input{
+    width: 336px;
+    height: 30px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+
+#phone_form .bind_sub{
+    background: #2ae789;
+}
+
+#pwd_form{
+    margin-top: 20px;
+    margin-left: 40px;
+    display: none;
+}
+
+#pwd_form td{
+    width: 300px;
+    height: 50px;
+    font-family: FangSong;
+    font-size:20px;
+}
+
+#pwd_form input{
+    width: 336px;
+    height: 30px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+
+#pwd_form .save{
+    background: #2ae789;
+}
+
+/*  footer  */
+footer{
+    padding: 100px 0;
+    border-top: 1px #dedede solid;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+footer .rights{
+    color: #3b3b3b;
+    font-family: "lato_regular", arial;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+
+
+::selection {color:#ffffff;background:#353434;}
+::-moz-selection {color:#ffffff;background:#353434;}

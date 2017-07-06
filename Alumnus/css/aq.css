@@ -1,0 +1,201 @@
+/*  General CSS*/
+
+.wrapper{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/*  header  */
+header{
+    width: 100%;
+    height: 80px;
+    background: #353434;
+}
+
+header .logo{
+    float: left;
+    margin-top: 21px;
+}
+
+header nav{
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 0 0 40px;
+    padding: 13px 40px;
+    border-left: 1px #404040 solid;
+    z-index: 9999;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: FangSong;
+    letter-spacing: 1px;
+}
+
+header nav ul li:first-child{
+    margin-left: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #65bf95;
+}
+
+
+
+/* Billboard */
+
+.billboard{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    /*position: relative;*/
+    padding-bottom: 40px;
+}
+
+.billboard .aq_list{
+    margin-left: 70px;
+    margin-top: 40px;
+    background: #8a7d69;
+    width: 90%;
+    height: auto;
+    border: #8fa383 solid 2px;
+}
+.billboard .raise{
+    margin-left: 70px;
+    margin-top: 40px;
+    /*background: #8a7d69;*/
+    background: #e0e7dc;
+    width: 90%;
+    height: 310px;
+   /* position: absolute;
+    bottom:40px;*/
+    border: #7474a3 solid 2px;
+}
+
+.raise_tab{
+    border-collapse: separate;
+    border-spacing: 30px 20px;
+}
+
+.raise_tab input{
+    width:300px;
+    height:30px;
+    font-family: FangSong;
+    font-size:20px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+.raise_tab .content{
+    font-family: FangSong;
+    font-size:20px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+.raise_tab .raise_sub{
+    background: #2ae789;
+}
+
+.showQuestion_tab{
+    border-collapse: separate;
+    border-spacing: 100px 20px;
+}
+
+.showQuestion_tab td{
+    font-family: FangSong;
+    font-size:18px;
+    /*background: #a39a93;*/
+}
+
+.answer_tab{
+    border-collapse: separate;
+    border-spacing: 10px 40px;
+    margin-left: 20px;
+ }
+
+.answer_tab td{
+    font-family: FangSong;
+    font-size:16px;
+}
+
+.showQuestion_tab td{
+    background: #a39a93;
+}
+
+.showQuestion_tab a{
+    font-family: FangSong;
+    font-size:18px;
+}
+
+.showQuestion_tab a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.answer_form{
+    display: none;
+    margin-left: 40px;
+}
+
+.answer_form .content{
+    font-family: FangSong;
+    font-size:20px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+.answer_form .answer_sub{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    bottom: 22px;
+    background: #ffd475;
+    font-family: FangSong;
+    font-size:20px;
+    border: #3b3b3b solid 2px;
+}
+
+.answerList_tab{
+    border-collapse: separate;
+    border-spacing: 40px 10px;
+    margin-left: 40px;
+}
+
+.answerList_tab td{
+    font-family: FangSong;
+    font-size:14px;
+}
+
+/*  footer  */
+footer{
+    padding: 100px 0;
+    border-top: 1px #dedede solid;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+footer .rights{
+    color: #3b3b3b;
+    font-family: "lato_regular", arial;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+
+
+::selection {color:#ffffff;background:#353434;}
+::-moz-selection {color:#ffffff;background:#353434;}

@@ -1,0 +1,240 @@
+/*  General CSS*/
+
+.wrapper{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/*  header  */
+header{
+    width: 100%;
+    height: 80px;
+    background: #353434;
+    position: relative;
+}
+
+header .logo{
+    float: left;
+    margin-top: 21px;
+}
+
+header nav{
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 0 0 40px;
+    padding: 13px 40px;
+    border-left: 1px #404040 solid;
+    z-index: 9999;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: FangSong;
+    letter-spacing: 1px;
+}
+
+header nav ul li:first-child{
+    margin-left: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #65bf95;
+}
+
+header .icon {
+    width: 50px;
+    height: 50px;
+    float: right;
+    position: relative;
+    top: 14px;
+    right: 40px;
+}
+
+header .group {
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background: #D4B67B;
+    z-index: 1;
+}
+
+.action li{
+    width: 140px;
+    height: 40px;
+}
+
+.action li a{
+    font-family: FangSong;
+    color: #2c2c2c;
+}
+
+.action li a:hover{
+    color: #56b086;
+}
+.action i{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px;
+}
+
+
+/* Billboard */
+
+.billboard{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.billboard .wrapper{
+   /* margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;*/
+    background: #202020;
+    width: 850px;
+    margin: 40px auto;
+    position: relative;
+}
+
+.billboard .caption p{
+    display: inline-block;
+    color: #000;
+    font-family: FangSong;
+    font-weight: lighter;
+    font-size: 30px;
+    padding: 20px;
+    background: rgba(0, 255, 60, 0.6);
+    margin-bottom: 0px;
+}
+
+a{
+    color: #101010;
+}
+
+h1{
+    font-size:20px;
+    font-family: "Microsoft Yahei";
+    padding: 20px 0px 20px;
+    color: #aaa;
+    margin: 0 0 20px;
+    font-weight: 600;
+    border-bottom: 1px dotted #505050;
+    text-shadow: 0px 0px 30px #FFF;
+    text-align: center;
+}
+
+.link{
+    position:relative;
+    top:30px;
+    left: 290px;
+    width: 280px;
+    margin-bottom: 40px;
+}
+
+.aq_link,.activity_link{
+    font-size:22px;
+    font-family: FangSong;
+    color: #aaa;
+    font-weight: 600;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.aq_link:hover,.activity_link:hover{
+    color: #2ae789;
+}
+
+.socialwrapper{
+    width:200px;
+    height:200px;
+    float:left;
+    margin:5px;
+    position:relative;
+    cursor:pointer;
+}
+
+.social{
+    background: #303030;
+    height: 100%;
+    margin: 0px;
+    text-align: center;
+    width:100%;
+    margin: 0px;
+    position:absolute;
+    border: 1px solid #505050;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.social:hover {
+    border:1px solid #505050;
+    -moz-box-shadow:0 0 20px #AAA inset;
+    -webkit-box-shadow:0 0 20px #AAA inset;
+    box-shadow:0 0 20px #AAA inset;
+}
+
+.social .img{
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.social .desc{
+    color: #fff;
+    font-size: 20px;
+    height: 200px;
+    line-height: 200px;
+    margin: 0 auto;
+    min-height: 200px;
+    min-width: 200px;
+    text-align: center;
+    width: 200px;
+    float:left;
+    position: absolute;
+    background: #404040;
+    display:none;
+    font-size:14px;
+    font-weight: 600;
+    font-family: "Microsoft Yahei";
+    padding:0;
+    text-shadow: 2px 2px 1px #606060;
+}
+
+.clear{
+    clear: both;
+}
+
+
+/*  footer  */
+footer{
+    padding: 100px 0;
+    border-top: 1px #dedede solid;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+footer .rights{
+    color: #3b3b3b;
+    font-family: "lato_regular", arial;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+
+
+::selection {color:#ffffff;background:#353434;}
+::-moz-selection {color:#ffffff;background:#353434;}

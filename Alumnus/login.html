@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<html>
+
+    <meta charset="UTF-8">
+
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+    <script type="text/javascript" src="js/login.js"></script>
+
+    </head>
+
+    <body>
+
+
+
+    <header>
+
+        <div class="wrapper">
+
+            <img src="img/logo.png" alt="Crafty" class="logo">
+
+            <nav id="nav_menu">
+
+                <ul>
+
+                    <li><a href="index.html">家</a></li>
+
+                    <li><a href="#">服务</a></li>
+
+                    <li><a href="#">关于</a></li>
+
+                    <li><a href="#">联系</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header><!--  End Header  -->
+
+
+
+    <section class="billboard">
+
+        <div class="wrapper">
+
+            <div class="caption">
+
+                <p>登录</p>
+
+            </div>
+
+            <form action="login.php" method="post" id="login_form" onsubmit="return confirm();">
+
+                <table>
+
+                    <tr>
+
+                        <td><input type="text" id="email" name="user_email" class="email" placeholder="邮箱" onblur="checkEmail();"></td>
+
+                        <td><input type="password" id="pwd" name="user_pwd" class="password" placeholder="密码" onblur="checkPwd();"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>
+
+                            <div id="email_prompt"></div>
+
+                        </td>
+
+                        <td>
+
+                            <div id="pwd_prompt"></div>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td colspan="2"><input type="submit" value="登   录" class="login_sub"></td>
+
+                    </tr>
+
+                </table>
+
+            </form>
+
+        </div>
+
+        <div class="forgot">
+            <a href="#">忘记密码?</a>
+        </div>
+
+    </section><!--  End Billboard  -->
+
+
+
+    <footer>
+
+        <img src="img/logo_footer.png" alt="Crafty">
+
+        <p class="rights">Copyright © xiangYoung</p>
+
+    </footer><!--  End Footer  -->
+
+
+
+    </body>
+
+</html>

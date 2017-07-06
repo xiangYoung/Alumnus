@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Register</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+
+    <script type="text/javascript" src="js/register.js"></script>
+
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+
+    <script type="text/javascript" src="js/school.js"></script>
+
+    <script type="text/javascript" src="js/choose_college.js"></script>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+    <div class="wrapper">
+
+        <img src="img/logo.png" alt="Crafty" class="logo">
+
+        <nav id="nav_menu">
+
+            <ul>
+
+                <li><a href="index.html">家</a></li>
+
+                <li><a href="#">服务</a></li>
+
+                <li><a href="#">关于</a></li>
+
+                <li><a href="#">联系</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header><!--  End Header  -->
+
+
+
+<section class="billboard">
+
+    <div class="wrapper">
+
+        <div class="caption">
+
+            <p>注册</p>
+
+        </div>
+
+        <form action="register.php" method="post" id="register_form" onsubmit=" return confirm();">
+                <table>
+
+                <tr>
+
+                    <td><input type="text" id="user" name="user_name"   placeholder="昵称（非数字开头）" onblur="checkUser();"></td>
+
+                    <td><input type="text" id="email" name="user_email"  placeholder="邮箱" onblur="checkEmail();"></td>
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <div id="user_prompt"></div>
+
+                    </td>
+
+                    <td>
+
+                        <div id="email_prompt"></div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><input type="password" id="pwd" name="user_pwd"  placeholder="密码（不少于6位）" onblur="checkPwd();"></td>
+
+                    <td><input type="password" id="verify" name="user_2pwd"  placeholder="确认密码" onblur="verifyPwd();"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <div id="pwd_prompt"></div>
+
+                    </td>
+
+                    <td>
+
+                        <div id="verify_prompt"></div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><input type="text" id="college_name" name="user_college"   placeholder="大学" value="选择大学" onblur="if(this.value==''){this.value='选择大学'}" onfocus="if(this.value=='选择大学'){this.value=''}" onclick="pop()"></td>
+
+                    <td><input type="text" id="major" name="user_major"  placeholder="专业" onblur="checkMajor();"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td colspan="2">
+
+                        <div id="major_prompt"></div>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><input type="submit" value="注    册" name="sub" class="register_sub"></td>
+
+                    <td><input type="reset" value="重    置" name="reset" class="register_reset" ></td>
+
+                </tr>
+
+            </table>
+
+
+        </form>
+
+    </div>
+
+    <div id="choose-box-wrapper"><!--学校选择弹出框结构-->
+
+        <div id="choose-box">
+
+            <div id="choose-box-title">
+
+                <span>选择大学</span>
+
+            </div>
+
+            <div id="choose-a-province"></div>
+
+            <div id="choose-a-school"></div>
+
+            <div id="choose-box-bottom">
+
+                <input type="button" onclick="hide()" value="关闭" />
+
+            </div>
+
+        </div>
+
+    </div><!--  End choose-box-wrapper  -->
+
+</section><!--  End Billboard  -->
+
+
+
+<footer>
+
+    <img src="img/logo_footer.png" alt="Crafty">
+
+    <p class="rights">Copyright © xiangYoung</p>
+
+</footer><!--  End Footer  -->
+
+
+
+</body>
+
+</html>

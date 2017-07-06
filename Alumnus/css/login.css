@@ -1,0 +1,163 @@
+/*
+    Template Author : xiangyoung
+	Author Email    : xiangyoung@yeah.net
+	Template Name   : Crafty
+
+
+	*****************************************
+
+    Register stylesheet
+    - Header
+	- Billboard
+	- Footer
+*/
+
+
+
+/*  General CSS*/
+
+.wrapper{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+/*  header  */
+header{
+    width: 100%;
+    height: 80px;
+    background: #353434;
+}
+
+header .logo{
+    float: left;
+    margin-top: 21px;
+}
+
+header nav{
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 0 0 40px;
+    padding: 13px 40px;
+    border-left: 1px #404040 solid;
+    z-index: 9999;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: FangSong;
+    letter-spacing: 1px;
+}
+
+header nav ul li:first-child{
+    margin-left: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover{
+    color: #65bf95;
+}
+
+
+
+/* Billboard */
+
+.billboard{
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+
+.billboard .wrapper{
+    margin-left: 70px;
+    margin-top: 40px;
+    background: #ffd475;
+}
+
+.billboard .caption p{
+    display: inline-block;
+    color: #000;
+    font-family: FangSong;
+    font-weight: lighter;
+    font-size: 30px;
+    padding: 20px;
+    background: rgba(0, 255, 60, 0.6);
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.billboard #login_form{
+    margin-top: 20px;
+}
+
+.billboard #login_form input{
+    width:400px;
+    height:30px;
+    font-family: FangSong;
+    font-size:20px;
+    margin: 36px;
+    background: #e0e7dc;
+    border: #3b3b3b solid 2px;
+}
+
+.billboard #login_form div{
+    color: red;
+    position: relative;
+    left: 34px;
+}
+
+.billboard #login_form .login_sub{
+    background: #2ae789;
+}
+
+.billboard .forgot{
+    width: 260px;
+    margin-top: 40px;
+    margin-left: 610px;
+}
+
+.billboard .forgot a{
+    text-decoration: none;
+    color: #e70c48;
+    font-family: FangSong;
+    font-size:26px;
+}
+
+.billboard .forgot a:hover{
+    color: #65bf95;
+}
+
+
+/*  footer  */
+footer{
+    padding: 100px 0;
+    border-top: 1px #dedede solid;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+footer .rights{
+    color: #3b3b3b;
+    font-family: "lato_regular", arial;
+    font-size: 14px;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+
+
+::selection {color:#ffffff;background:#353434;}
+::-moz-selection {color:#ffffff;background:#353434;}
